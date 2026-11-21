@@ -1,8 +1,8 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Award, Globe, TrendingUp, Users } from "lucide-react";
+import {Button} from "@/components/ui/button";
+import {Card, CardContent, CardHeader, CardTitle} from "@/components/ui/card";
+import {Award, Globe, TrendingUp, Users} from "lucide-react";
 import Link from "next/link";
 
 export default function AboutPage() {
@@ -12,12 +12,10 @@ export default function AboutPage() {
         {/* Hero Section */}
         <section className="py-20 px-4">
           <div className="container mx-auto max-w-3xl">
-            <h1 className="text-5xl font-bold text-gray-900 mb-6 text-balance">
-              About SwiftShip
-            </h1>
+            <h1 className="text-5xl font-bold text-gray-900 mb-6 text-balance">About ShipVerick</h1>
             <p className="text-xl text-gray-600 text-pretty mb-8">
-              We're a modern logistics company dedicated to making shipping
-              simple, affordable, and reliable for businesses of all sizes.
+              We're a modern logistics company dedicated to making shipping simple, affordable, and
+              reliable for businesses of all sizes.
             </p>
           </div>
         </section>
@@ -27,23 +25,18 @@ export default function AboutPage() {
           <div className="container mx-auto max-w-4xl">
             <div className="grid md:grid-cols-2 gap-12">
               <div>
-                <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                  Our Mission
-                </h2>
+                <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Mission</h2>
                 <p className="text-gray-600 leading-relaxed">
-                  To revolutionize the shipping industry by providing
-                  innovative, transparent, and customer-centric logistics
-                  solutions that empower businesses to reach customers anywhere.
+                  To revolutionize the shipping industry by providing innovative, transparent, and
+                  customer-centric logistics solutions that empower businesses to reach customers
+                  anywhere.
                 </p>
               </div>
               <div>
-                <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                  Our Vision
-                </h2>
+                <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Vision</h2>
                 <p className="text-gray-600 leading-relaxed">
-                  To be the most trusted and efficient shipping partner
-                  globally, enabling seamless commerce and connection between
-                  businesses and their customers.
+                  To be the most trusted and efficient shipping partner globally, enabling seamless
+                  commerce and connection between businesses and their customers.
                 </p>
               </div>
             </div>
@@ -77,9 +70,7 @@ export default function AboutPage() {
         {/* Values */}
         <section className="py-16 px-4 bg-gray-50">
           <div className="container mx-auto">
-            <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
-              Our Core Values
-            </h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Our Core Values</h2>
             <div className="grid md:grid-cols-4 gap-6 max-w-5xl mx-auto">
               <Card className="border-gray-200">
                 <CardHeader>
@@ -135,24 +126,16 @@ export default function AboutPage() {
         {/* Team Section */}
         <section className="py-16 px-4 bg-white">
           <div className="container mx-auto max-w-3xl">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
-              Our Team
-            </h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Our Team</h2>
             <p className="text-gray-600 text-center mb-8 text-lg">
-              SwiftShip is powered by a dedicated team of logistics experts,
-              engineers, and customer service professionals passionate about
-              shipping excellence.
+              ShipVerick is powered by a dedicated team of logistics experts, engineers, and
+              customer service professionals passionate about shipping excellence.
             </p>
             <div className="bg-gray-50 p-8 rounded-lg text-center">
               <p className="text-gray-600 mb-6">
-                With over 200 employees across 5 continents, we're here to serve
-                you 24/7.
+                With over 200 employees across 5 continents, we're here to serve you 24/7.
               </p>
-              <Button
-                size="lg"
-                asChild
-                className="bg-blue-600 hover:bg-blue-700 text-white"
-              >
+              <Button size="lg" asChild className="bg-blue-600 hover:bg-blue-700 text-white">
                 <Link href="/company/careers">Join Our Team</Link>
               </Button>
             </div>
@@ -162,18 +145,11 @@ export default function AboutPage() {
         {/* CTA */}
         <section className="py-16 px-4 bg-blue-600 text-white">
           <div className="container mx-auto text-center max-w-3xl">
-            <h2 className="text-3xl font-bold mb-4">
-              Ready to Partner with Us?
-            </h2>
+            <h2 className="text-3xl font-bold mb-4">Ready to Partner with Us?</h2>
             <p className="text-lg mb-8 text-blue-100">
-              Join thousands of businesses that trust SwiftShip for their
-              logistics needs.
+              Join thousands of businesses that trust ShipVerick for their logistics needs.
             </p>
-            <Button
-              size="lg"
-              asChild
-              className="bg-white text-blue-600 hover:bg-blue-50"
-            >
+            <Button size="lg" asChild className="bg-white text-blue-600 hover:bg-blue-50">
               <Link href="/auth/signup">Get Started</Link>
             </Button>
           </div>

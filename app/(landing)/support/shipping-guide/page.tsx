@@ -1,14 +1,8 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { AlertCircle, CheckCircle, Package, Truck } from "lucide-react";
+import {Button} from "@/components/ui/button";
+import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "@/components/ui/card";
+import {AlertCircle, CheckCircle, Package, Truck} from "lucide-react";
 import Link from "next/link";
 
 export default function ShippingGuidePage() {
@@ -21,12 +15,10 @@ export default function ShippingGuidePage() {
         <section className="py-20 px-4">
           <div className="container mx-auto">
             <div className="max-w-3xl mx-auto text-center">
-              <h1 className="text-5xl font-bold text-gray-900 mb-4 text-balance">
-                Shipping Guide
-              </h1>
+              <h1 className="text-5xl font-bold text-gray-900 mb-4 text-balance">Shipping Guide</h1>
               <p className="text-xl text-gray-600 text-pretty">
-                Learn everything you need to know about shipping with SwiftShip,
-                from packaging to delivery.
+                Learn everything you need to know about shipping with ShipVerick, from packaging to
+                delivery.
               </p>
             </div>
           </div>
@@ -44,29 +36,21 @@ export default function ShippingGuidePage() {
                   </div>
                   <div>
                     <CardTitle>Preparing Your Shipment</CardTitle>
-                    <CardDescription>
-                      Follow these steps for optimal delivery
-                    </CardDescription>
+                    <CardDescription>Follow these steps for optimal delivery</CardDescription>
                   </div>
                 </div>
               </CardHeader>
               <CardContent className="space-y-6">
                 <div>
-                  <h4 className="font-semibold text-gray-900 mb-3">
-                    Packaging Tips
-                  </h4>
+                  <h4 className="font-semibold text-gray-900 mb-3">Packaging Tips</h4>
                   <ul className="space-y-2 text-gray-600">
                     <li className="flex items-start">
                       <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                      <span>
-                        Use proper packaging materials to protect your items
-                      </span>
+                      <span>Use proper packaging materials to protect your items</span>
                     </li>
                     <li className="flex items-start">
                       <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                      <span>
-                        Fill empty spaces with bubble wrap or packing peanuts
-                      </span>
+                      <span>Fill empty spaces with bubble wrap or packing peanuts</span>
                     </li>
                     <li className="flex items-start">
                       <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
@@ -101,12 +85,8 @@ export default function ShippingGuidePage() {
                       1
                     </div>
                     <div>
-                      <h5 className="font-semibold text-gray-900">
-                        Create an Account
-                      </h5>
-                      <p className="text-gray-600 text-sm">
-                        Sign up at SwiftShip to get started
-                      </p>
+                      <h5 className="font-semibold text-gray-900">Create an Account</h5>
+                      <p className="text-gray-600 text-sm">Sign up at ShipVerick to get started</p>
                     </div>
                   </div>
                   <div className="flex gap-4">
@@ -114,9 +94,7 @@ export default function ShippingGuidePage() {
                       2
                     </div>
                     <div>
-                      <h5 className="font-semibold text-gray-900">
-                        Enter Shipment Details
-                      </h5>
+                      <h5 className="font-semibold text-gray-900">Enter Shipment Details</h5>
                       <p className="text-gray-600 text-sm">
                         Provide sender, recipient, and package information
                       </p>
@@ -127,12 +105,9 @@ export default function ShippingGuidePage() {
                       3
                     </div>
                     <div>
-                      <h5 className="font-semibold text-gray-900">
-                        Select Service
-                      </h5>
+                      <h5 className="font-semibold text-gray-900">Select Service</h5>
                       <p className="text-gray-600 text-sm">
-                        Choose from Standard, Express, Overnight, or
-                        International
+                        Choose from Standard, Express, Overnight, or International
                       </p>
                     </div>
                   </div>
@@ -141,12 +116,8 @@ export default function ShippingGuidePage() {
                       4
                     </div>
                     <div>
-                      <h5 className="font-semibold text-gray-900">
-                        Review & Pay
-                      </h5>
-                      <p className="text-gray-600 text-sm">
-                        Confirm details and complete payment
-                      </p>
+                      <h5 className="font-semibold text-gray-900">Review & Pay</h5>
+                      <p className="text-gray-600 text-sm">Confirm details and complete payment</p>
                     </div>
                   </div>
                   <div className="flex gap-4">
@@ -154,9 +125,7 @@ export default function ShippingGuidePage() {
                       5
                     </div>
                     <div>
-                      <h5 className="font-semibold text-gray-900">
-                        Print & Ship
-                      </h5>
+                      <h5 className="font-semibold text-gray-900">Print & Ship</h5>
                       <p className="text-gray-600 text-sm">
                         Print the label and arrange pickup or drop-off
                       </p>
@@ -174,17 +143,13 @@ export default function ShippingGuidePage() {
                     <AlertCircle className="h-6 w-6 text-red-600" />
                   </div>
                   <div>
-                    <CardTitle className="text-red-900">
-                      Prohibited Items
-                    </CardTitle>
+                    <CardTitle className="text-red-900">Prohibited Items</CardTitle>
                     <CardDescription>Items we cannot ship</CardDescription>
                   </div>
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="text-red-900 mb-4">
-                  The following items cannot be shipped:
-                </p>
+                <p className="text-red-900 mb-4">The following items cannot be shipped:</p>
                 <ul className="grid md:grid-cols-2 gap-3 text-red-900">
                   <li>Hazardous materials</li>
                   <li>Flammable substances</li>
@@ -204,8 +169,7 @@ export default function ShippingGuidePage() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-gray-600">
-                  Every shipment comes with real-time tracking. You can monitor
-                  your package by:
+                  Every shipment comes with real-time tracking. You can monitor your package by:
                 </p>
                 <ul className="space-y-2 text-gray-600">
                   <li className="flex items-start">
@@ -231,14 +195,9 @@ export default function ShippingGuidePage() {
           <div className="container mx-auto text-center max-w-3xl">
             <h2 className="text-3xl font-bold mb-4">Ready to Ship?</h2>
             <p className="text-lg mb-8 text-blue-100">
-              Follow this guide and get your packages shipped safely and on
-              time.
+              Follow this guide and get your packages shipped safely and on time.
             </p>
-            <Button
-              size="lg"
-              asChild
-              className="bg-white text-blue-600 hover:bg-blue-50"
-            >
+            <Button size="lg" asChild className="bg-white text-blue-600 hover:bg-blue-50">
               <Link href="/auth/signup">Create Account</Link>
             </Button>
           </div>

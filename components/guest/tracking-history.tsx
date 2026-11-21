@@ -144,7 +144,7 @@ const TrackingHistory = ({shipment, trackingEvents, paymentOptions = []}: Tracke
                       <div
                         className={cn(
                           "absolute h-1 rounded-full transition-all duration-700 ease-in-out",
-                          currentStatus === "delivered" ? "bg-green-600" : "bg-indigo-600"
+                          currentStatus === "delivered" ? "bg-green-600" : "bg-indigo-600",
                         )}
                         style={{
                           width: `${(Math.min(trackingEvents.length, 5) - 1) * 25}%`,
@@ -168,14 +168,14 @@ const TrackingHistory = ({shipment, trackingEvents, paymentOptions = []}: Tracke
                                     "absolute inline-flex rounded-full opacity-75 animate-ping",
                                     currentStatus === "delivered"
                                       ? "bg-green-200 h-6 w-6"
-                                      : "bg-indigo-300 h-6 w-6"
+                                      : "bg-indigo-300 h-6 w-6",
                                   )}></span>
                                 <div
                                   className={cn(
                                     "relative flex items-center justify-center rounded-full border-2 h-4 w-4",
                                     currentStatus === "delivered"
                                       ? "bg-green-600 border-green-600"
-                                      : "bg-indigo-600 border-indigo-600"
+                                      : "bg-indigo-600 border-indigo-600",
                                   )}>
                                   {currentStatus === "delivered" ? (
                                     <CheckCircle className="text-white h-3 w-3" />
@@ -191,8 +191,8 @@ const TrackingHistory = ({shipment, trackingEvents, paymentOptions = []}: Tracke
                                   isPassed && currentStatus !== "delivered"
                                     ? "bg-indigo-600 border-indigo-600"
                                     : isPassed && currentStatus === "delivered"
-                                    ? "bg-green-600 border-green-600"
-                                    : "bg-gray-300 border-gray-300"
+                                      ? "bg-green-600 border-green-600"
+                                      : "bg-gray-300 border-gray-300",
                                 )}></div>
                             )}
                           </div>
@@ -209,8 +209,8 @@ const TrackingHistory = ({shipment, trackingEvents, paymentOptions = []}: Tracke
                             currentStatus === "delivered"
                               ? "text-green-700"
                               : currentStatus === "exception"
-                              ? "text-red-800"
-                              : "text-indigo-700"
+                                ? "text-red-800"
+                                : "text-indigo-700",
                           )}>
                           {currentStatus === "exception" ? (
                             <div className="text-sm">
@@ -360,7 +360,7 @@ const TrackingHistory = ({shipment, trackingEvents, paymentOptions = []}: Tracke
                             key={i}
                             className={cn(
                               "flex items-start justify-between border rounded-md p-4 bg-gray-50 cursor-pointer",
-                              selectedPaymentOption === option.type && "ring-2 ring-indigo-500"
+                              selectedPaymentOption === option.type && "ring-2 ring-indigo-500",
                             )}>
                             <div>
                               <h3 className="font-semibold text-gray-800 mb-1">{option.label}</h3>
@@ -426,13 +426,13 @@ const TrackingHistory = ({shipment, trackingEvents, paymentOptions = []}: Tracke
                           <p className="text-xs text-gray-500">
                             Or email your proof to{" "}
                             <a
-                              href={`mailto:support@swiftshipverse.com?subject=${encodeURIComponent(
-                                `Proof of Payment for ${shipment.recipient_name} - ${shipment.recipient_city}`
+                              href={`mailto:support@shipverick.com?subject=${encodeURIComponent(
+                                `Proof of Payment for ${shipment.recipient_name} - ${shipment.recipient_city}`,
                               )}&body=${encodeURIComponent(
-                                `Hello,\n\nPlease find attached the proof of payment for the shipment to ${shipment.recipient_name}, ${shipment.recipient_city}.\n\nTracking/Reference: \n\nThank you.`
+                                `Hello,\n\nPlease find attached the proof of payment for the shipment to ${shipment.recipient_name}, ${shipment.recipient_city}.\n\nTracking/Reference: \n\nThank you.`,
                               )}`}
                               className="font-semibold text-indigo-600 underline">
-                              support@swiftshipverse.com
+                              support@shipverick.com
                             </a>
                           </p>
 
@@ -456,12 +456,12 @@ const TrackingHistory = ({shipment, trackingEvents, paymentOptions = []}: Tracke
                             Or email your proof to{" "}
                             <a
                               href={`mailto:payments@swiftship.com?subject=${encodeURIComponent(
-                                `Proof of Payment for ${shipment.recipient_name} - ${shipment.recipient_city}`
+                                `Proof of Payment for ${shipment.recipient_name} - ${shipment.recipient_city}`,
                               )}&body=${encodeURIComponent(
-                                `Hello,\n\nPlease find attached the proof of payment for the shipment to ${shipment.recipient_name}, ${shipment.recipient_city}.\n\nTracking/Reference: \n\nThank you.`
+                                `Hello,\n\nPlease find attached the proof of payment for the shipment to ${shipment.recipient_name}, ${shipment.recipient_city}.\n\nTracking/Reference: \n\nThank you.`,
                               )}`}
                               className="font-semibold text-indigo-600 underline">
-                              support@swiftshipverse.com
+                              support@shipverick.com
                             </a>
                           </p>
                         </AlertDialogDescription>

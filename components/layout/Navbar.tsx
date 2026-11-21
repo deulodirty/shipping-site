@@ -1,3 +1,5 @@
+"use client";
+
 import {Truck} from "lucide-react";
 import Link from "next/link";
 import {MobileNavDrawer} from "../mobile-nav-drawer";
@@ -18,7 +20,7 @@ const Navbar = () => {
           <div className="bg-blue-600 p-2 rounded-lg">
             <Truck className="h-6 w-6 text-white" />
           </div>
-          <span className="text-xl font-bold text-gray-900">SwiftShip</span>
+          <span className="text-xl font-bold text-gray-900">ShipVerick</span>
         </Link>
 
         <nav className="hidden md:flex items-center space-x-6">

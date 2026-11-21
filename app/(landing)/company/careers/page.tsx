@@ -1,8 +1,8 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Briefcase, DollarSign, MapPin } from "lucide-react";
+import {Button} from "@/components/ui/button";
+import {Card, CardContent, CardHeader, CardTitle} from "@/components/ui/card";
+import {Briefcase, DollarSign, MapPin} from "lucide-react";
 import Link from "next/link";
 
 const jobOpenings = [
@@ -41,12 +41,10 @@ export default function CareersPage() {
         {/* Hero Section */}
         <section className="py-20 px-4">
           <div className="container mx-auto max-w-3xl">
-            <h1 className="text-5xl font-bold text-gray-900 mb-6 text-balance">
-              Join Our Team
-            </h1>
+            <h1 className="text-5xl font-bold text-gray-900 mb-6 text-balance">Join Our Team</h1>
             <p className="text-xl text-gray-600 text-pretty mb-8">
-              Help us revolutionize the shipping industry. We're hiring talented
-              individuals who share our passion for excellence.
+              Help us revolutionize the shipping industry. We're hiring talented individuals who
+              share our passion for excellence.
             </p>
           </div>
         </section>
@@ -55,7 +53,7 @@ export default function CareersPage() {
         <section className="py-16 px-4 bg-white">
           <div className="container mx-auto max-w-4xl">
             <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
-              Why Work at SwiftShip?
+              Why Work at ShipVerick?
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
               <Card className="border-gray-200">
@@ -120,15 +118,10 @@ export default function CareersPage() {
         {/* Open Positions */}
         <section className="py-16 px-4 bg-gray-50">
           <div className="container mx-auto max-w-4xl">
-            <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
-              Open Positions
-            </h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Open Positions</h2>
             <div className="space-y-4">
               {jobOpenings.map((job, index) => (
-                <Card
-                  key={index}
-                  className="border-gray-200 hover:shadow-lg transition-shadow"
-                >
+                <Card key={index} className="border-gray-200 hover:shadow-lg transition-shadow">
                   <CardHeader>
                     <div className="flex items-start justify-between">
                       <div>
@@ -154,8 +147,7 @@ export default function CareersPage() {
                         <Button
                           size="sm"
                           asChild
-                          className="bg-blue-600 hover:bg-blue-700 text-white"
-                        >
+                          className="bg-blue-600 hover:bg-blue-700 text-white">
                           <Link href="#apply">Apply Now</Link>
                         </Button>
                       </div>
@@ -172,14 +164,10 @@ export default function CareersPage() {
           <div className="container mx-auto text-center max-w-3xl">
             <h2 className="text-3xl font-bold mb-4">Don't see your role?</h2>
             <p className="text-lg mb-8 text-blue-100">
-              We're always looking for talented people. Send us your resume and
-              we'll keep it on file.
+              We're always looking for talented people. Send us your resume and we'll keep it on
+              file.
             </p>
-            <Button
-              size="lg"
-              asChild
-              className="bg-white text-blue-600 hover:bg-blue-50"
-            >
+            <Button size="lg" asChild className="bg-white text-blue-600 hover:bg-blue-50">
               <Link href="mailto:careers@swiftship.com">Send Your Resume</Link>
             </Button>
           </div>

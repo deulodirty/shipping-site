@@ -1,3 +1,5 @@
+"use client";
+
 import {Truck} from "lucide-react";
 import Link from "next/link";
 
@@ -11,7 +13,7 @@ const Footer = () => {
               <div className="bg-blue-600 p-2 rounded-lg">
                 <Truck className="h-5 w-5 text-white" />
               </div>
-              <span className="text-lg font-bold">SwiftShip</span>
+              <span className="text-lg font-bold">ShipVerick</span>
             </Link>
             <p className="text-gray-400 text-sm">
               Professional shipping solutions for businesses worldwide.
@@ -98,7 +100,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
-          <p>&copy; 2024 SwiftShip. All rights reserved.</p>
+          <p>&copy; 2024 ShipVerick. All rights reserved.</p>
         </div>
       </div>
     </footer>

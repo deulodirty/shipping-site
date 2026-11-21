@@ -1,11 +1,11 @@
-import { Analytics } from "@vercel/analytics/next";
-import { GeistMono } from "geist/font/mono";
-import { GeistSans } from "geist/font/sans";
-import type { Metadata } from "next";
+import {Analytics} from "@vercel/analytics/next";
+import {GeistMono} from "geist/font/mono";
+import {GeistSans} from "geist/font/sans";
+import type {Metadata} from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "SwiftShip - Fast & Reliable Shipping Solutions",
+  title: "ShipVerick - Fast & Reliable Shipping Solutions",
   description: "landing page",
 };
 

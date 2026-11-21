@@ -74,10 +74,10 @@ const MainTracker = ({
       <p className="text-sm text-gray-500 mt-6">
         Need help? Contact{" "}
         <a
-          href={`mailto:support@swiftshipverse.com?subject=${encodeURIComponent(
-            "Help with tracking"
+          href={`mailto:support@shipverick.com?subject=${encodeURIComponent(
+            "Help with tracking",
           )}&body=${encodeURIComponent(
-            `Tracking number: ${trackingNumber}\n\nPlease describe your issue:`
+            `Tracking number: ${trackingNumber}\n\nPlease describe your issue:`,
           )}`}
           className="text-blue-600 hover:underline">
           customer support

@@ -27,7 +27,7 @@ export function DashboardNav() {
               <div className="bg-blue-600 p-2 rounded-lg">
                 <Truck className="h-5 w-5 text-white" />
               </div>
-              <span className="text-xl font-bold text-gray-900">SwiftShip</span>
+              <span className="text-xl font-bold text-gray-900">ShipVerick</span>
             </Link>
             <div className="hidden md:flex items-center space-x-1">
               {navigation.map((item) => {
@@ -40,7 +40,7 @@ export function DashboardNav() {
                       "flex items-center space-x-2 px-3 py-2 rounded-md text-sm font-medium transition-colors",
                       pathname === item.href
                         ? "bg-blue-100 text-blue-700"
-                        : "text-gray-600 hover:text-gray-900 hover:bg-gray-100"
+                        : "text-gray-600 hover:text-gray-900 hover:bg-gray-100",
                     )}>
                     <Icon className="h-4 w-4" />
                     <span>{item.name}</span>
