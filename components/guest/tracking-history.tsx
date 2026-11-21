@@ -104,11 +104,11 @@ const TrackingHistory = ({shipment, trackingEvents, paymentOptions = []}: Tracke
 
   // Ensure we never pass undefined to the Date constructor by falling back to created_at or now
   const ddate = new Date(shipment.estimated_delivery_date ?? shipment.created_at ?? Date.now());
-  // const dtime = ddate.toLocaleTimeString("en-US", {
-  //   hour: "2-digit",
-  //   minute: "2-digit",
-  //   hour12: false,
-  // });
+  const dtime = ddate.toLocaleTimeString("en-US", {
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false,
+  });
   const shipmentDeliveryDate = ddate.toLocaleDateString("en-US", {
     weekday: "long",
     month: "short",
